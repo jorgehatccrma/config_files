@@ -1,0 +1,21 @@
+# my ST2 preferences (open with 'cmd+,' from ST2)
+
+{
+	"color_scheme": "Packages/CheerfullyDark/Cheerfully Dark.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"font_face": "Source Code Pro Light",
+	"font_size": 13.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"scroll_past_end": true,
+	"soda_classic_tabs": true,
+	"spell_check": true,
+	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true,
+	"default_encoding": "UTF-8"
+}
