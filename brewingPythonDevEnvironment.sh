@@ -1,9 +1,4 @@
-# Simple shell script to setup a python scientific dev environment on OS X 10.9
-# Date: May 2014
-# Author: jorge herrera
-
-# (optional)
-# completely remove homebrew (to get a fresh star)
+# to completely remove homebrew (to get a fresh star)
 # 1. run the script at https://gist.github.com/mxcl/1173223
 # 2. After that, run the following command:
 #       rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
@@ -56,7 +51,8 @@ pip install scipy
 
 # prepare for matplotlib
 brew install freetype
-ln -s /usr/local/include/freetype2 /usr/local/include/freetype # seems freetype can't be found on some systems otherwise
+# seems freetype can't be found on some systems otherwise:
+ln -s /usr/local/include/freetype2 /usr/local/include/freetype
 
 
 brew install imagemagick graphviz
@@ -69,7 +65,7 @@ brew install qt pyqt
 # and finally
 pip install matplotlib
 
-# in the previuos step, in my case matplotlib was compiled using /opt/X11/include/libpng instead
+# in the previous step, in my case matplotlib was compiled using /opt/X11/include/libpng instead
 # of the brewed one, which lead to run time crashing when using matplotlib in "ipython qtconsole".
 # to solve the issue, I did "pip uninstall matplotlib" and then followed the instructions at
 # http://stackoverflow.com/questions/22898245/libpng-version-incompatibility-in-fresh-installation-of-ipython
