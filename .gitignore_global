@@ -10,13 +10,15 @@
 # Matlab
 *~
 
-# Latex
+# Latex (mostly from https://gist.github.com/kogakure/149016, sorted and with some additions)
 *.acn
 *.acr
 *.alg
 *.aux
+*.bak
 *.bbl
 *.blg
+*.brf
 *.dvi
 *.glg
 *.gls
@@ -24,13 +26,17 @@
 *.ilg
 *.ind
 *.ist
+*.fdb_latexmk
 *.glo
 *.lof
 *.log
+*.lol
 *.lot
 *.maf
 *.mtc
 *.mtc1
+*.nav
 *.out
 *.toc
+*.snm
 *.synctex.gz
