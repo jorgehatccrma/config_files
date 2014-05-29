@@ -1,0 +1,36 @@
+# Mac OS X
+.DS_Store
+
+# XCode
+*.xcuserstate
+
+# Python
+*.pyc
+
+# Matlab
+*~
+
+# Latex
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.glo
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.toc
+*.synctex.gz
