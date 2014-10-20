@@ -2,10 +2,27 @@
 .DS_Store
 
 # XCode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
 *.xcuserstate
+project.xcworkspace/
+xcuserdata/
 
-# Python
+# Backup files
+*~.nib
+\#*#
+.#*
+
+# Generated files (C, Python, etc.)
+*.o
 *.pyc
+
+#Python modules
+MANIFEST
+dist/
+build/
 
 # Matlab
 *~
