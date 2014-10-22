@@ -5,6 +5,8 @@
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Source Code Pro Light",
 	"font_size": 13.0,
+	"caret_style": "phase",
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
