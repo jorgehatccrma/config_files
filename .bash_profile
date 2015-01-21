@@ -15,6 +15,14 @@ alias ipy='ipython --pylab'
 alias ipy='ipython notebook --pylab=inline'
 alias kp="/Users/jorgeh/kpcli-2.5.pl -kdb='/Users/jorgeh/Tresors/kdb/keepassDB.kdbx'"
 
+# create alises for workstations
+for i in `seq 1 60`;
+do
+    # echo 'Creating alias for cmn'$i
+    alias cmn$i='ssh cmn'$i'.domain.com'
+done
+
+
 # enable color in the terminal bash shell export
 CLICOLOR=1
 
