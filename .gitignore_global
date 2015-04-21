@@ -37,6 +37,7 @@ build/
 *.blg
 *.brf
 *.dvi
+*.fls
 *.glg
 *.gls
 *.idx
@@ -49,6 +50,7 @@ build/
 *.log
 *.lol
 *.lot
+*.lox
 *.maf
 *.mtc
 *.mtc1
