@@ -32,8 +32,10 @@ build/
 *.acr
 *.alg
 *.aux
+*.auxlock
 *.bak
 *.bbl
+*.bcf
 *.blg
 *.brf
 *.dvi
@@ -57,5 +59,9 @@ build/
 *.nav
 *.out
 *.toc
+*.run.xml
 *.snm
 *.synctex.gz
+*.synctex.gz(busy)
+*.upa
+*.upb
