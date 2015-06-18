@@ -11,8 +11,8 @@ alias lt='ls -laGt'
 alias lah='ls -lahG'
 alias clc='clear'
 alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
-alias ipy='ipython --pylab'
-alias ipy='ipython notebook --pylab=inline'
+alias ipy='ipython'
+alias ipyn='ipython notebook'
 alias kp="/Users/jorgeh/kpcli-2.5.pl -kdb='/Users/jorgeh/Tresors/kdb/keepassDB.kdbx'"
 
 # create alises for workstations
