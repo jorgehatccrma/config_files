@@ -4,7 +4,7 @@
 #       rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # verify everything is ok
 brew doctor
