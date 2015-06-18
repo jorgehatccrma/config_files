@@ -10,7 +10,7 @@ alias la='ls -laG'
 alias lt='ls -laGt'
 alias lah='ls -lahG'
 alias clc='clear'
-alias qtpy='ipython qtconsole --pylab=inline --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
+alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
 alias ipy='ipython --pylab'
 alias ipy='ipython notebook --pylab=inline'
 alias kp="/Users/jorgeh/kpcli-2.5.pl -kdb='/Users/jorgeh/Tresors/kdb/keepassDB.kdbx'"
