@@ -8,7 +8,7 @@ data: May 2014
 First, [download kpcli](http://kpcli.sourceforge.net/).
 Once downloaded, put it in its final location (e.g. ~/):
 
-    mv ~/Downloads/kpcli-2.5.pl ~/)
+    mv ~/Downloads/kpcli-2.5.pl ~/
 
 Make it executable:
 
