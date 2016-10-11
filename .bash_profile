@@ -66,3 +66,11 @@ _completemarks() {
 }
 
 complete -F _completemarks jump unmark
+
+# a-la MATLAB history search
+if [[ $- == *i* ]]
+then
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+fi
+
