@@ -4,6 +4,8 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # aliases
+alias edp='vim  ~/.bash_profile'
+alias rlp='source  ~/.bash_profile && tput setaf 4; echo "~/.bash_profile reloaded"'
 alias ll='ls -lG'
 alias lh='ls -lhG'
 alias la='ls -laG'
@@ -13,7 +15,7 @@ alias clc='clear'
 alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
 alias ipy='ipython'
 alias ipyn='ipython notebook'
-alias kp="/Users/jorgeh/kpcli-2.5.pl -kdb='/Users/jorgeh/Tresors/kdb/keepassDB.kdbx'"
+alias kp="/Users/jorgehat/kpcli-2.5.pl -kdb='/Users/jorgehat/Tresors/kdb/keepassDB.kdbx'"
 
 # create alises for workstations
 for i in `seq 1 60`;
