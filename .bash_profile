@@ -16,6 +16,7 @@ alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source
 alias ipy='ipython'
 alias ipyn='ipython notebook'
 alias kp="/Users/jorgehat/kpcli-2.5.pl -kdb='/Users/jorgehat/Tresors/kdb/keepassDB.kdbx'"
+alias grep='grep --color=auto'
 
 # create alises for workstations
 for i in `seq 1 60`;
