@@ -11,8 +11,12 @@
 # implementation a couple of lines below)
 # BOXES is a space separated list of BOXES of the form
 # [user1@]BOXNAME1 [user2@]BOXNAME2 ...
+#
+# IMPORTANT NOTE:
+#
+# You MUST run this script from your home directory
 
-## boxes to sync to
+## default boxes to sync to
 if [[ $# -eq 0 ]]; then
   # defaults
   declare -a boxes=($BOX1 $BOX2 "otheruser@$BOX3")
@@ -21,10 +25,10 @@ else
 fi
 
 ## files to synchronize
-declare -a files=(".vimrc" ".vim/colors/cheerfully_dark.vim")
+declare -a files=(".vimrc" ".screenrc")
 
-## directories to create
-declare -a directories=("~/.vim/colors")
+## directories to create/synchronize
+declare -a directories=(".vim/colors" ".vim/UltiSnips" ".vim/autoload")
 
 ## sexyness
 BLACK='setaf 0'
@@ -58,7 +62,13 @@ do
   # create required directories
   for dir in "${directories[@]}"
   do
+    # first make sure the directory exists
     cmd="ssh ${box} test -d ${dir} || mkdir -p ${dir}"
+    echocolor "> ${cmd}" "${GRAY}"
+    $cmd
+
+    # and the synchronize
+    cmd="rsync -avzhe ssh ${dir}/ ${box}:${dir}/"
     echocolor "> ${cmd}" "${GRAY}"
     $cmd
   done
