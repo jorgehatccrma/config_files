@@ -4,7 +4,7 @@ config_files
 personal config files and environment setup notes
 
 
-## Bash
+## bash
 
 I've decided to break up my `.bash_profile` into logical "modules" to group
 related functionality. The reason is just it was growing out of control, so it
@@ -30,3 +30,11 @@ etc.
 Ideally this is all that would exist in my `.bash_profile`, but in reality I
 keep some minor configs in there while I decide if they belong to a new or an
 existing module.
+
+
+## tmux
+
+Currently, my tmux setup if fairly simple, and comprise only two files:
+
+- .tmux.conf
+- .tmux-osx.conf
