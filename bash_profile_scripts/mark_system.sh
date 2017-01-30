@@ -15,17 +15,7 @@ function unmark {
     rm -i "$MARKPATH/$1"
 }
 
-
-# # Linux version
-# #function marks {
-# #    ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
-# #}
-# # OS X version
-
-# function marks {
-#     \ls -l "$MARKPATH" | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
-# }
-
+# os dependent marks function
 case $OSTYPE in
   linux*)
     function marks {
