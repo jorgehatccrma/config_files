@@ -38,3 +38,9 @@ Currently, my tmux setup if fairly simple, and comprise only two files:
 
 - .tmux.conf
 - .tmux-osx.conf
+
+
+## Vim
+
+The vim setup is slightly more involved, so for now is in its [own
+repo](https://github.com/jorgehatccrma/vimconfig)
