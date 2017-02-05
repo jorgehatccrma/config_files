@@ -18,6 +18,9 @@ CLICOLOR=1
 export TERM=xterm-256color
 # export TERM=xterm-color
 
+# display colored gtest (google test suite) output
+export GTEST_COLOR=1
+
 # a-la MATLAB history search
 if [[ $- == *i* ]]
 then
