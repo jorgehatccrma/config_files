@@ -18,8 +18,7 @@
 run-shell "tmux setenv -g TMUX_VERSION $(tmux -V | cut -c 6-)"
 
 
-set-option -g default-terminal "xterm-256color"
-set-option -ga terminal-overrides ",xterm-256color:Tc"
+set-option -g default-terminal "xterm-color"
 
 #set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 if-shell 'test "$(uname)" = "Darwin"' 'source ~/.tmux-osx.conf'
@@ -45,7 +44,6 @@ bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
-
 
 # Enable mouse mode (tmux 2.1 and above)
 if-shell -b '[ "$(echo "$TMUX_VERSION < 2.1" | bc)" = 1  ]' \
@@ -85,13 +83,13 @@ setw -g aggressive-resize on
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'  # nicer defaults
 
-# set -g @plugin 'jimeh/tmux-themepack'  # themes
-set -g @plugin 'jorgehatccrma/tmux-themepack'  # themes (my own for with light versions)
+set -g @plugin 'jimeh/tmux-themepack'  # themes
 
 
 # setup the theme (see https://github.com/jimeh/tmux-themepack)
-# set -g @themepack 'double/orange'
-set -g @themepack 'double-light/orange'
+# set -g @themepack 'block/orange'
+# set -g @themepack 'double/yellow'
+set -g @themepack 'double/orange'
 
 # better mouse scroll support
 #if-shell -b '[ "$(echo "$TMUX_VERSION >= 2.1" | bc)" = 1  ]' \
