@@ -20,6 +20,13 @@
     ci = commit
     st = status
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    g = grep --extended-regexp --break --heading --line-number
+    unstage = reset HEAD --
+    amend = commit --amend
+    gpr = pull --rebase --stat
+    gpo = push origin HEAD --
+    short = log --pretty=format:'%h - %ar, %an : %s'
+    report = log --pretty=format:'%C(green)%h%C(reset) - %C(blue)%ad%C(reset) : %C(yellow)%an%C(reset) : %C(reset)%s' --date=short
 
 [color]
     ui = auto
