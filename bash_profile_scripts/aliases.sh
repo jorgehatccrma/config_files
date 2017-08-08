@@ -4,11 +4,12 @@
 alias edp='vim  ~/.bash_profile'
 alias rlp='source  ~/.bash_profile && tput setaf 4; echo "~/.bash_profile reloaded"'
 alias evrc='vim $MYVIMRC'
-alias ll='ls -lG'
-alias lh='ls -lhG'
-alias la='ls -laG'
-alias lt='ls -laGt'
-alias lah='ls -lahG'
+alias ls='ls -FGAp'
+alias ll='ls -l'
+alias lh='ls -lh'
+alias la='ls -la'
+alias lt='ls -lat'
+alias lah='ls -lah'
 alias clc='clear'
 alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
 
@@ -28,6 +29,13 @@ function frameworkpython {
         /usr/local/bin/python "$@"
     fi
 }
+
+# create alises for workstations
+for i in `seq 1 60`;
+do
+    # echo 'Creating alias for cmn'$i
+    alias cmn$i='ssh -Y username@machineprefix'$i'.domain.com'
+done
 
 alias ipy='frameworkpython -m IPython'
 
