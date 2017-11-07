@@ -5,9 +5,9 @@
 # startup a "default" session if non currently exists
 # tmux has-session -t _default || tmux new-session -s _default -d
 
-NEW_VANILLA_SESSION="$(tput setaf 6)New Vanilla tmux Session$(tput sgr0)"
-NEW_DEV_SESSION="$(tput setaf 6)New Development tmux Session$(tput sgr0)"
-BASH_SESSION="$(tput setaf 6)Bash$(tput sgr0)"
+NEW_VANILLA_SESSION="$(tput setaf 2)New Vanilla tmux Session$(tput sgr0)"
+NEW_DEV_SESSION="$(tput setaf 2)New Development tmux Session$(tput sgr0)"
+BASH_SESSION="$(tput setaf 2)Bash$(tput sgr0)"
 
 # present menu for user to choose which workspace to open
 PS3="Please choose your session: "
@@ -26,10 +26,13 @@ do
 			;;
 		$NEW_DEV_SESSION)
 			read -p "Enter new session name: " SESSION_NAME
+			read -e -p "Enter root directory: " BASE_DIR
+      pushd "${BASE_DIR/#\~/$HOME}"
 			tmux new -d -s "$SESSION_NAME" -n "dev"
       tmux split-window -h
       tmux swap-pane -D
       tmux split-window -v
+      popd > /dev/null
       tmux -2 attach-session -d -t "$SESSION_NAME"
 			break
 			;;
