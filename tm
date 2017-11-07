@@ -17,32 +17,32 @@ echo "------------------"
 echo " "
 select opt in "${options[@]}"
 do
-	case $opt in
-		$NEW_VANILLA_SESSION)
-			read -p "Enter new session name: " SESSION_NAME
-			# tmux -2 -v new -s "$SESSION_NAME"
-			tmux -2 new -s "$SESSION_NAME"
-			break
-			;;
-		$NEW_DEV_SESSION)
-			read -p "Enter new session name: " SESSION_NAME
-			read -e -p "Enter root directory: " BASE_DIR
+  case $opt in
+    $NEW_VANILLA_SESSION)
+      read -p "Enter new session name: " SESSION_NAME
+      # tmux -2 -v new -s "$SESSION_NAME"
+      tmux -2 new -s "$SESSION_NAME"
+      break
+      ;;
+    $NEW_DEV_SESSION)
+      read -p "Enter new session name: " SESSION_NAME
+      read -e -p "Enter root directory: " BASE_DIR
       pushd "${BASE_DIR/#\~/$HOME}"
-			tmux new -d -s "$SESSION_NAME" -n "dev"
+      tmux new -d -s "$SESSION_NAME" -n "dev"
       tmux split-window -h
       tmux swap-pane -D
       tmux split-window -v
       popd > /dev/null
       tmux -2 attach-session -d -t "$SESSION_NAME"
-			break
-			;;
-		"bash")
-			bash --login
-			break;;
-		*)
-			tmux -2 attach-session -t $opt
-			break
-			;;
-	esac
+      break
+      ;;
+    "bash")
+      bash --login
+      break;;
+    *)
+      tmux -2 attach-session -t $opt
+      break
+      ;;
+  esac
 done
 
