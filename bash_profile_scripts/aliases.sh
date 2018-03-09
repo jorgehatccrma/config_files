@@ -1,6 +1,7 @@
 #echo "defining aliases"
 
 # aliases
+alias vim=nvim
 alias edp='vim  ~/.bash_profile'
 alias rlp='source  ~/.bash_profile && tput setaf 4; echo "~/.bash_profile reloaded"'
 alias evrc='vim $MYVIMRC'
