@@ -36,7 +36,7 @@ do
       tmux -2 attach-session -d -t "$SESSION_NAME"
       break
       ;;
-    "bash")
+    $BASH_SESSION)
       bash --login
       break;;
     *)
