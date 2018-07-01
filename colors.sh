@@ -24,7 +24,7 @@ for (colnum = 0; colnum<256; colnum++) {
   if (g>255) g = 510-g;
   printf "\033[48;2;%d;%d;%dm", r,g,b;
   printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
-  printf "o\033[0m";
+  printf " \033[0m";
 }
 printf "\n";
 }'
