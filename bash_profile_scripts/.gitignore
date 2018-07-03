@@ -1,0 +1,13 @@
+# By default, ignore everything (we don't want to push sensitive info to a
+# public repo)
+*
+
+# Explicitly specify the files to keep in the repo
+!aliases.sh
+!basic.sh
+!cuda_env.sh
+!go_env.sh
+!mark_system.sh
+!prompt.sh
+!soundfont.sh
+!utils.sh
