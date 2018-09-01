@@ -10,6 +10,7 @@ SCRIPTS_FOLDER="$HOME/bash_profile_scripts"
 . "$SCRIPTS_FOLDER/go_env.sh"
 . "$SCRIPTS_FOLDER/mark_system.sh"
 . "$SCRIPTS_FOLDER/soundfont.sh"
+. "$SCRIPTS_FOLDER/gcloud.sh"
 
 
 # force brewed python
@@ -25,3 +26,4 @@ source $HOME/.git-prompt.sh
 # virtualenvwrapper
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
+

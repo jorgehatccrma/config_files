@@ -18,6 +18,12 @@ CLICOLOR=1
 export TERM=xterm-256color
 # export TERM=xterm-color
 
+
+# fix strange tmux terminal interaction
+# (see https://tutorials.technology/tutorials/Iterm2--terminal-where-in-my-cursor-behaves-strangely.html)
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # display colored gtest (google test suite) output
 export GTEST_COLOR=1
 

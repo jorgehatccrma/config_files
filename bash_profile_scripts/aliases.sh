@@ -48,5 +48,19 @@ alias grep='grep --color=auto'
 # coreutils (brew installed coreutils prepends commands with a 'g')
 alias shuf=gshuf
 
+# relace `cat` with `bat` (need to `brew install bat` first)
+alias cat='bat --theme TwoDark'
+
+# replace `ctrl-r` (reverse history search) with fzf (need `brew install fzf`)
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
+# improved `du`
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
+# better man
+alias help='tldr'
+
 # utils
 alias cmakerelease='cmake -DCMAKE_BUILD_TYPE=Release'
