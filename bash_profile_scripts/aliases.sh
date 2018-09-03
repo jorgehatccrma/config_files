@@ -29,14 +29,6 @@ function frameworkpython {
     else
         /usr/local/bin/python "$@"
     fi
-}
-
-# create alises for workstations
-for i in `seq 1 60`;
-do
-    # echo 'Creating alias for cmn'$i
-    alias cmn$i='ssh -Y username@machineprefix'$i'.domain.com'
-done
 
 alias ipy='frameworkpython -m IPython'
 

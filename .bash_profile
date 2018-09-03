@@ -10,6 +10,7 @@ SCRIPTS_FOLDER="$HOME/bash_profile_scripts"
 . "$SCRIPTS_FOLDER/go_env.sh"
 . "$SCRIPTS_FOLDER/mark_system.sh"
 . "$SCRIPTS_FOLDER/soundfont.sh"
+. "$SCRIPTS_FOLDER/ccrma.sh"
 
 
 # force brewed python

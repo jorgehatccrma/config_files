@@ -2,11 +2,11 @@
 
 [user]
     name = Jorge Herrera
-    email = jorgeh@ccrma.stanford.edu
+    email = jherreras@gmail.com
 [core]
     excludesfile = /Users/jorgeh/.gitignore_global
-    #editor = "mate -w"
-    edit = "subl -n -w"
+    ; edit = "subl -n -w"
+    edit = "vim"
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
     path =
