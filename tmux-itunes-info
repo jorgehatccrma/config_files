@@ -7,9 +7,11 @@ tell application "iTunes"
 			set track_title to name of the current track
 			set artist_name to artist of the current track
 			if artist_name > 0 then
-				"♫ " & artist_name & " - " & track_title
+				# "♫ " & artist_name & " - " & track_title
+				"ﰝ " & artist_name & " - " & track_title
 			else
-				"♫ " & "[???] - " & track_title
+				# "♫ " & "[???] - " & track_title
+				"ﰝ " & "[???] - " & track_title
 			end if
 		end if
 	end if

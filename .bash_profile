@@ -2,16 +2,21 @@
 
 SCRIPTS_FOLDER="$HOME/bash_profile_scripts"
 
-. "$SCRIPTS_FOLDER/basic.sh"
-. "$SCRIPTS_FOLDER/aliases.sh"
-. "$SCRIPTS_FOLDER/utils.sh"
-. "$SCRIPTS_FOLDER/prompt.sh"
-. "$SCRIPTS_FOLDER/cuda_env.sh"
-. "$SCRIPTS_FOLDER/go_env.sh"
-. "$SCRIPTS_FOLDER/mark_system.sh"
-. "$SCRIPTS_FOLDER/soundfont.sh"
-. "$SCRIPTS_FOLDER/ccrma.sh"
+# . "$SCRIPTS_FOLDER/basic.sh"
+# . "$SCRIPTS_FOLDER/aliases.sh"
+# . "$SCRIPTS_FOLDER/utils.sh"
+# . "$SCRIPTS_FOLDER/prompt.sh"
+# . "$SCRIPTS_FOLDER/cuda_env.sh"
+# . "$SCRIPTS_FOLDER/go_env.sh"
+# . "$SCRIPTS_FOLDER/mark_system.sh"
+# . "$SCRIPTS_FOLDER/soundfont.sh"
+# . "$SCRIPTS_FOLDER/ccrma.sh"
+# . "$SCRIPTS_FOLDER/gcloud.sh"
 
+for f in ${SCRIPTS_FOLDER}/*.sh; do
+  echo "Sourcing ${f}"
+  . $f
+done
 
 # force brewed python
 export PYTHON_LIBRARY="/usr/local/Cellar/python/2.7.12_1/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib"
@@ -26,3 +31,4 @@ source $HOME/.git-prompt.sh
 # virtualenvwrapper
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
+

@@ -3,16 +3,19 @@
 [user]
     name = Jorge Herrera
     email = jherreras@gmail.com
+
 [core]
     excludesfile = /Users/jorgeh/.gitignore_global
     ; edit = "subl -n -w"
     edit = "vim"
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path =
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+
+; [difftool "sourcetree"]
+;     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+;     path =
+
+; [mergetool "sourcetree"]
+;     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+;     trustExitCode = true
 
 [alias]
     co = checkout
@@ -33,8 +36,14 @@
     diff = auto
     status = auto
     branch = auto
+
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f
+
 [push]
     default = simple
+
+[pager]
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
