@@ -27,6 +27,23 @@ do
     $NEW_DEV_SESSION)
       read -p "Enter new session name: " SESSION_NAME
       read -e -p "Enter root directory: " BASE_DIR
+
+      # if $BASE_DIR doesn't exist, ask user if want to create it
+      if ! [ -d /home/ram/dir ]
+      then
+        read -p "Directory $BASE_DIR doesn't exist. Would you like to create it? [y/n] " YN
+        if [[ $YN == "y" || $YN == "Y" || $YN == "" ]]
+        then
+          mkdir -p $BASE_DIR
+          echo "Directory $BASE_DIR created"
+        else
+          echo "Aborting. Bye!"
+          exit
+        fi
+      # else
+      #   echo "dir present"
+      fi
+
       pushd "${BASE_DIR/#\~/$HOME}"
       tmux new -d -s "$SESSION_NAME" -n "dev"
       tmux split-window -h
