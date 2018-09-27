@@ -31,13 +31,6 @@ function frameworkpython {
     fi
 }
 
-# create alises for workstations
-for i in `seq 1 60`;
-do
-    # echo 'Creating alias for cmn'$i
-    alias cmn$i='ssh -Y username@machineprefix'$i'.domain.com'
-done
-
 alias ipy='frameworkpython -m IPython'
 
 # http://blog.yimingliu.com/2015/07/22/python-multiprocessing-code-crashes-on-os-x-under-ipython/)

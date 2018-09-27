@@ -2,21 +2,20 @@
 
 [user]
     name = Jorge Herrera
-    email = jorge.herrera@shazam.com
+    email = jherreras@gmail.com
 
 [core]
-    excludesfile = /Users/jorge.herrera/.gitignore_global
-    #editor = "mate -w"
-    #edit = "subl -n -w"
-    editor = vim
+    excludesfile = /Users/jorgeh/.gitignore_global
+    ; edit = "subl -n -w"
+    edit = "vim"
 
 ; [difftool "sourcetree"]
 ;     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 ;     path =
 
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+; [mergetool "sourcetree"]
+;     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+;     trustExitCode = true
 
 [alias]
     co = checkout
