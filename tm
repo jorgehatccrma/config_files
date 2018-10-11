@@ -29,7 +29,7 @@ do
       read -e -p "Enter root directory: " BASE_DIR
 
       # if $BASE_DIR doesn't exist, ask user if want to create it
-      if ! [ -d /home/ram/dir ]
+      if ! [ -d $BASE_DIR ]
       then
         read -p "Directory $BASE_DIR doesn't exist. Would you like to create it? [y/n] " YN
         if [[ $YN == "y" || $YN == "Y" || $YN == "" ]]
