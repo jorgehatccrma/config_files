@@ -12,7 +12,8 @@ alias la='ls -la'
 alias lt='ls -lat'
 alias lah='ls -lah'
 alias clc='clear'
-alias qtpy='ipython qtconsole --style native --ConsoleWidget.font_family="Source Code Pro" --ConsoleWidget.font_size=14'
+alias path='echo -e ${PATH//:/\\n}'
+
 
 #alias ipy2='ipython2'
 #alias ipy2n='ipython2 notebook'
@@ -42,7 +43,7 @@ alias grep='grep --color=auto'
 alias shuf=gshuf
 
 # relace `cat` with `bat` (need to `brew install bat` first)
-alias cat='bat --theme TwoDark'
+alias bat='bat --theme TwoDark'
 
 # replace `ctrl-r` (reverse history search) with fzf (need `brew install fzf`)
 alias preview="fzf --preview 'bat --color \"always\" {}'"
