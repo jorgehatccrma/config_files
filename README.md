@@ -6,11 +6,25 @@ personal config files and environment setup notes
 
 ## bash
 
+### Usage
+
+1. Clone this repo somewhere on your computer.
+2. Create links to the scripts you need. E.g.:
+```
+ln <PATH_TO_CLONED_REPO>/.tmux.conf
+ln <PATH_TO_CLONED_REPO>/tm ~/bin/tm
+```
+
+3. Profit
+
+
+### Notes
+
 I've decided to break up my `.bash_profile` into logical "modules" to group
 related functionality. The reason is just it was growing out of control, so it
 was getting harder to quickly find stuff in the file.
 
-To do so, I created a folder to containe the "modules" (just a fancy way to
+To do so, I created a folder to contained the "modules" (just a fancy way to
 refer to simple bash commands / scripts). Specific modules can be "imported" in
 the main `.bash_profile` by simply adding:
 
