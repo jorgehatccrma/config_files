@@ -12,7 +12,9 @@ personal config files and environment setup notes
 2. Create links to the scripts you need. E.g.:
 ```
 ln <PATH_TO_CLONED_REPO>/.tmux.conf
-ln <PATH_TO_CLONED_REPO>/tm ~/bin/tm
+ln <PATH_TO_CLONED_REPO>/tm $HOME/bin/tm
+ln <PATH_TO_CLONED_REPO>/dark.conf $HOME/dark.conf
+ln <PATH_TO_CLONED_REPO>/light.conf $HOME/light.conf
 ```
 
 3. Profit
