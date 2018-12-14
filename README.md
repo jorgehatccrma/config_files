@@ -53,6 +53,17 @@ Currently, my tmux setup if fairly simple, and comprise only two files:
 - .tmux.conf
 - .tmux-osx.conf
 
+### TMux with iTerm (my conf)
+
+When using my tmux configuration with iTerm2, you will probably want to change
+your iTerm preferences. In particular, you need to make the option keys (at
+least the right-option key) to emmit an `ESC+` (as oppose to `Normal` option,
+as it defaults to). To do this, simply open iTerm preferences and go to the
+**Profiles** section. There, select the profile you use (e.g. Default) and go
+to the `Keys` subsection (not the top level `Keys`, but the profile's `Keys`).
+Look for the option keys and select the `Esc+` option for either or both of
+them.
+
 
 ## Vim
 
