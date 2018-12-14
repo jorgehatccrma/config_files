@@ -18,8 +18,8 @@ for f in ${SCRIPTS_FOLDER}/*.sh; do
   . $f
 done
 
-# force brewed python
-export PYTHON_LIBRARY="/usr/local/Cellar/python/2.7.12_1/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib"
+# # force brewed python
+# export PYTHON_LIBRARY="/usr/local/Cellar/python/2.7.12_1/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib"
 
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
@@ -28,7 +28,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 source $HOME/git-completion.bash
 source $HOME/.git-prompt.sh
 
-# virtualenvwrapper
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
+# # virtualenvwrapper
+# export WORKON_HOME=~/Envs
+# source /usr/local/bin/virtualenvwrapper.sh
 
