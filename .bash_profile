@@ -14,7 +14,7 @@ SCRIPTS_FOLDER="$HOME/bash_profile_scripts"
 # . "$SCRIPTS_FOLDER/gcloud.sh"
 
 for f in ${SCRIPTS_FOLDER}/*.sh; do
-  echo "Sourcing ${f}"
+  # echo "Sourcing ${f}"
   . $f
 done
 
