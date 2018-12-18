@@ -31,6 +31,9 @@ do
       read -p "Enter new session name: " SESSION_NAME
       read -e -p "Enter root directory: " BASE_DIR
 
+      # safely replaces `~` with `$HOME`
+      BASE_DIR="${BASE_DIR/#\~/$HOME}"
+
       # if $BASE_DIR doesn't exist, ask user if want to create it
       if ! [ -d $BASE_DIR ]
       then
