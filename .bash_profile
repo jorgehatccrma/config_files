@@ -32,5 +32,6 @@ source $HOME/.git-prompt.sh
 # export WORKON_HOME=~/Envs
 # source /usr/local/bin/virtualenvwrapper.sh
 
-# pyenv (change prompt when pyenv venv is active)
-export PYENV_VIRTUALENV_DISABLE_PROMPT=0
+
+# # pyenv (change prompt when pyenv venv is active)
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
